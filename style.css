@@ -16,6 +16,9 @@
     --btn-padding: 0.6rem 2rem;
     --search-padding: 0.6rem 1rem;
     --card-padding: 1rem;
+
+    --sticky-top-left:5.4rem;
+    --sticky-top-right: -18rem;
 }
 
 *, *::before, *::after{
@@ -126,6 +129,19 @@ main{
     position: relative;
     top: 5.4rem;
 }
-main.container{
+main .container{
     display: grid;
+    grid-template-columns: 18vh auto 20vw;
+    column-gap: 2rem;
+    position: relative;
 }
+
+/* -------------------------LEFT--------------------------- */
+
+main .container .left{
+    height: max-content;
+    position: sticky;
+    top: var(--sticky-top-left);
+}
+
+
