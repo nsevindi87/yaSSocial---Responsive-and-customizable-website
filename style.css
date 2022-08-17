@@ -131,7 +131,7 @@ main{
 }
 main .container{
     display: grid;
-    grid-template-columns: 18vh auto 20vw;
+    grid-template-columns: 18vw auto 20vw;
     column-gap: 2rem;
     position: relative;
 }
@@ -323,4 +323,32 @@ main .container .left .profile{
 }
 .middle .stories .story:nth-child(6){
     background: url('./images/story-6.jpg') no-repeat center center/cover;
+}
+
+.middle .story .profile-photo{
+    width: 2rem;
+    height: 2rem;
+    align-self: start;
+    border: 3px solid var(--color-primary);
+}
+
+/* -----------------------CREATE POST-------------------------- */
+.middle .create-post{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    background: var(--color-white);
+    padding: 0.4rem var(--card-padding);
+    border-radius: var(--border-radius);
+}
+
+.middle .create-post input[type="text"]{
+    justify-self: start;
+    width: 100%;
+    padding-left: 1rem;
+    background: transparent;
+    color: var(--color-dark);
+    margin-right: 1rem;
 }
