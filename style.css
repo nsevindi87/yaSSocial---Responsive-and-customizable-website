@@ -530,6 +530,7 @@ main .container .right{
     display: grid;
     place-items: center;
     font-size: 0.9rem;
+    display: none;
 }
 
 .customize-theme .card{
@@ -561,4 +562,109 @@ main .container .right{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.customize-theme .choose-size span{
+    width: 1rem;
+    height: 1rem;
+    background: var(--color-secondary);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.customize-theme .choose-size span:active{
+    background: var(--color-primary);
+}
+
+/* ---------------FONT SIZE----------------- */
+.customize-theme .color{
+    margin-top: 2rem;
+}
+
+.customize-theme .choose-color{
+    background: var(--color-light);
+    padding: var(--search-padding);
+    border-radius: var(--card-border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.customize-theme .choose-color span{
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+}
+
+.customize-theme .choose-color span:nth-child(1){
+    background: hsl(252, 75%, 60%);
+}
+.customize-theme .choose-color span:nth-child(2){
+    background: hsl(52, 75%, 60%);
+}
+.customize-theme .choose-color span:nth-child(3){
+    background: hsl(352, 75%, 60%);
+}
+.customize-theme .choose-color span:nth-child(4){
+    background: hsl(152, 75%, 60%);
+}
+.customize-theme .choose-color span:nth-child(5){
+    background: hsl(202, 75%, 60%);
+}
+
+.customize-theme .choose-color span.active{
+    border: 5px solid white;
+}
+
+/* --------------BACKGROUND-------------------- */
+.customize-theme .background{
+    margin-top: 2rem;
+}
+
+.customize-theme .choose-bg{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.customize-theme .choose-bg > div{
+    padding: var(--card-padding);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.customize-theme .choose-bg>div.active{
+    border: 2px solid var(--color-primary);
+}
+
+.customize-theme .choose-bg .bg-1{
+    background: white;
+    color: black;
+}
+.customize-theme .choose-bg .bg-2{
+    background: hsl(252, 30%, 17%);
+    color: white;
+}
+.customize-theme .choose-bg .bg-3{
+    background: hsl(252, 30%, 10%);
+    color: white;
+}
+
+.customize-theme .choose-bg>div span{
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid var(--color-gray);
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+/* ---------------------MEDIA QUERIES FOR SMALL LAPTOPS AND TABLETS----------- */
+@media screen and (max-width: 1200px){
+
 }
