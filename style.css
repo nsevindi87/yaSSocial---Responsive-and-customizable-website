@@ -490,3 +490,29 @@ main .container .right{
 }
 
 /* ---------------------FRIEND REQUEST--------------- */
+.right .friend-requests{
+    margin-top: 1rem;
+}
+
+.right .friend-requests h4{
+    color: var(--color-gray);
+    margin: 1rem o;
+}
+
+.right .request{
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-bottom: 0.7rem ;
+}
+
+.right .request .info{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.right .request .action{
+    display: flex;
+    gap: 1rem;
+}
