@@ -516,3 +516,49 @@ main .container .right{
     display: flex;
     gap: 1rem;
 }
+
+/* -----------------THEME CUSTOMIZATION---------------- */
+.customize-theme{
+    background: rgba(255,255,255,0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    font-size: 0.9rem;
+}
+
+.customize-theme .card{
+    background: var(--color-white);
+    padding: 3rem;
+    border-radius: var(--card-border-radius);
+    width: 50%;
+}
+
+/* -------------FONT SIZE---------------- */
+.customize-theme .font-size{
+    margin-top: 5rem;
+}
+
+.customize-theme .font-size > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-light);
+    padding: var(--search-padding);
+    border-radius: var(--card-border-radius);
+}
+
+.customize-theme .choose-size{
+    background: var(--color-secondary);
+    height: 0.3rem;
+    width: 100%;
+    margin: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
