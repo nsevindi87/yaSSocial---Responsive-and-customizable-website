@@ -538,6 +538,7 @@ main .container .right{
     padding: 3rem;
     border-radius: var(--card-border-radius);
     width: 50%;
+    box-shadow: 0 0 1rem var(--color-primary);
 }
 
 /* -------------FONT SIZE---------------- */
@@ -572,7 +573,7 @@ main .container .right{
     cursor: pointer;
 }
 
-.customize-theme .choose-size span:active{
+.customize-theme .choose-size span.active{
     background: var(--color-primary);
 }
 
@@ -691,6 +692,10 @@ main .container .right{
     }
     .left .btn{
         display: none;
+    }
+
+    .customize-theme .card{
+        width: 92vw;
     }
 }
 

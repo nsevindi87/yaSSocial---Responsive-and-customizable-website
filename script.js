@@ -7,6 +7,10 @@ const messages = document.querySelector('.messages');
 const message = messages.querySelectorAll('.message');
 const messageSearch = document.querySelector('#message-search')
 
+//THEME
+const theme = document.querySelector('#theme');
+const themeModal = document.querySelector('.customize-theme')
+
 
 //remove active class from all menu items
 const changeActiveItem = () =>{
@@ -61,4 +65,42 @@ messagesNotification.addEventListener('click', ()=>{
     setTimeout(() => {
         messages.style.boxShadow ='none'
     }, 2000);
+})
+
+//THEME/DISPLAY CUSTOMIATION
+
+//opens modal
+const openThemeModal = ()=> {
+    themeModal.style.display = 'grid';
+}
+
+//closes Model
+const closeThemeModel = (e) =>{
+    if(e.target.classList.contains('customize-theme')){
+        themeModal.style.display = 'none'
+    }
+}
+
+
+//close modal
+themeModal.addEventListener('click', closeThemeModel)
+
+theme.addEventListener('click', openThemeModal)
+
+/* -----------------FONTS-------------- */
+fontSize.forEach(size => {
+    let fontSize;
+
+    if(size.classList.contains('font-size-1')){
+        fontSize = '10px';
+    }else if(size.classList.contains('font-size-2')){
+        fontSize = '13px';
+    }else if(size.classList.contains('font-size-2')){
+        fontSize = '16px';
+    }else if(size.classList.contains('font-size-2')){
+        fontSize = '19px';
+    }else if(size.classList.contains('font-size-2')){
+        fontSize = '22px'
+    }
+
 })
